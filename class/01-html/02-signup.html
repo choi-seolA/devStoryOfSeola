@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>회원가입</title>
+  <link href="./02-signup.css" rel="stylesheet">
+  <style>
+      *{
+        box-sizing: border-box;
+         margin: 0px;
+      }
+
+        .Box{
+          width: 1920px;
+          height: 1080px; 
+          gap: 0px;
+          opacity: 0px;
+        background: #FFFFFF;
+
+       }
+      .bg{
+        width: 670px;
+        height: 960px;
+        top: 60px;
+        left: 625px;
+        gap: 0px;
+        border-radius: 20px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        border: 1px solid #AACDFF
+        }
+
+      div{
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(170, 205, 255, 1);
+        box-shadow: 7px 7px 39px 0px rgba(0, 104, 255, 0.25);
+
+
+        width: 670px;
+        height: 960px;
+        top: 60px;
+        left: 625px;
+        gap: 0px;
+        border-radius: 20px 0px 0px 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+     }
+
+      .join{
+      width: 466px;
+      height: 94px;
+      top: 132px;
+      left: 725px;
+      gap: 0px;
+      opacity: 0px;
+      color: #0068FF;
+      font-family: Noto Sans CJK KR;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 47.36px;
+      text-align: left;
+      display: flex;
+      flex-direction:row;
+      align-items: flex-start;
+    }
+
+    .pw{
+      /* border: 1px solid rgba(207, 207, 207, 1); */
+      /* background: 1px solid
+       rgba(121, 121, 121, 1); */
+  
+      width: 466px;
+      height: 80px;
+      top: 387px;
+      left: 725px;
+      gap: 0px;
+      /* border: 1px 0px 0px 0px; */
+      opacity: 0px;
+      border-style: none;
+      border-bottom:1px solid rgba(207, 207, 207, 1);
+    }
+    .h{
+      box-shadow: 7px 7px 39px 0px rgba(0, 104, 255, 0.25);
+      width: 470px;
+      height: 1px;
+      top: 844px;
+      left: 725px;
+      gap: 0px;
+      opacity: 0px;
+
+    }
+    .ch{
+      width: 454px;
+      height: 21.06px;
+      top: 792.94px;
+      left: 737px;
+      gap: 0px;
+      border-radius: 3px 0px 0px 0px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+      border: 1px solid rgba(196, 196, 196, 1)
+    }
+    .gender{
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      align-items: center;
+      width: 140px;
+      height: 23.94px;
+      top: 719px;
+      left: 890px;
+      gap: 0px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+      border: 1px solid rgba(210, 210, 210, 1)
+      
+    }
+    .b{
+      display: flex;
+      flex-direction:row;
+      justify-content: center;
+      align-items: center;
+      width: 470px;
+      height: 75px;
+      top: 875px;
+      left: 725px;
+      gap: 0px;
+      border-radius: 10px 0px 0px 0px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+      border: 1px solid rgba(0, 104, 255, 1)
+    }
+  
+
+  </style>
+</head>
+<body>
+  <div class="Box">
+    <div class="bg">
+      <div>
+       <h2 class="join">회원 가입을 위해 정보를 입력해주세요</h2>
+       <input class="pw" type="text" placeholder="이메일을 입력해주세요"><br><br>
+       <input class="pw" type="text" placeholder="이름을 입력해주세요"><br><br>
+       <input  class="pw" type="password" placeholder="비민번호를 입력해주세요"><br><br>
+      <input class="pw" type="password" placeholder="비밀번호를 다시 입력해주세요"><br><br>
+      <!-- <select>
+         <option disabled="true"selected="true">지역을 선택하세요</option>
+         <option>서울</option>
+         <option>경기</option>
+         <option>인천</option>
+        </select> -->
+        <div class="gender">
+          <input type="radio" id="women" name="women">
+          <label for="women">여성</label>
+          <input type="radio" id="men" name="men">
+          <label for="men">남성</label>
+        </div>
+       <input class="ch" type="checkbox"> 이용약관 개인정보 수집 및 보관에 동의합니다.
+       <hr class="h">
+      <button class="b">가입하기</button>
+     </div>
+   </div>
+  </div>
+</body>
+</html>
